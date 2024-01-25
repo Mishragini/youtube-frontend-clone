@@ -11,6 +11,7 @@ export default function Appbar(){
     setIsSearchVisible(!isSearchVisible);
   };
   const handleSideNavbar=()=>{
+    console.log(open)
     setOpen(!open);
   }
     return(

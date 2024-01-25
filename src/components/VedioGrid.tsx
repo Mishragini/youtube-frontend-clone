@@ -73,7 +73,7 @@ const Vedios=[
     },
 ]
 export default function VedioGrid(){
-    return(<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    return(<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:ms-24">
         {Vedios.map(vedio=><div>
             <VedioCard title={vedio.title} 
             thumbnail={vedio.thumbnail}
