@@ -1,12 +1,10 @@
-import { sideNavbarState, smallScreenNavbarState } from "@/store/atom";
+import { sideNavbarState } from "@/store/atom";
 import { useRecoilState } from "recoil";
 export default function ToggleButton(){
     const [open,setOpen]=useRecoilState(sideNavbarState);
-    const[smallOpen,setSmallOpen]=useRecoilState(smallScreenNavbarState)
+
     const handleSideNavbar=()=>{
         setOpen(!open);
-        setSmallOpen(!smallOpen);
-        console.log(open);
       }
       return(<>
         <div className="flex mt-2 ">

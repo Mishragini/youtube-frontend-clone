@@ -5,7 +5,3 @@ export const sideNavbarState=atom({
     default:true
 })
 
-export const smallScreenNavbarState=atom({
-    key:'smallScreenNavbarState',
-    default:false
-})

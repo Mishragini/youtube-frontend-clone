@@ -1,17 +1,16 @@
-import { sideNavbarState, smallScreenNavbarState } from "@/store/atom";
+import { sideNavbarState } from "@/store/atom";
 import { useState } from "react";
 import { useRecoilValue } from "recoil";
 import ToggleButton from "./ToggleButton";
 
 export default function SideNavbar(){
     const open=useRecoilValue(sideNavbarState);
-    const smallOpen=useRecoilValue(smallScreenNavbarState);
     return (
         <>
         
 
 
- <aside id="separator-sidebar" className={`fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:${open?'translate-x-0':''} ${smallOpen?'translate-x-0':''} `}
+ <aside id="separator-sidebar" className={`fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full  ${!open?'translate-x-0':''} sm:${open?'translate-x-0':''} `}
 aria-label="Sidebar">
 
    <div className="h-full px-3 py-4 overflow-y-auto dark:bg-black">
