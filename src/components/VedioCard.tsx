@@ -1,6 +1,6 @@
 export default function VedioCard(props:any){
     return(
-        <div className="p-4 cursor-pointer w-90 ">
+        <div className="p-4 cursor-pointer ">
             <img className="rounded-xl" src={props.thumbnail} />
             <div className="grid grid-cols-12 mt-4">
             <div className="col-span-1">

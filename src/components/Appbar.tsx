@@ -11,9 +11,9 @@ export default function Appbar(){
   };
  
     return(
-        <div className="flex justify-between mt-4">
+        <div className="flex justify-between mt-4 ">
            
-            <ToggleButton></ToggleButton>
+            <ToggleButton ></ToggleButton>
             <div className="flex">
             <div className="search-bar flex items-center">
         <div className="relative">

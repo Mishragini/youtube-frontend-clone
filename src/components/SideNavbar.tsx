@@ -11,7 +11,7 @@ export default function SideNavbar(){
         
 
 
- (<aside id="separator-sidebar" className={`fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:${open?'translate-x-0':''} ${smallOpen?'translate-x-0':''} `}
+ <aside id="separator-sidebar" className={`fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:${open?'translate-x-0':''} ${smallOpen?'translate-x-0':''} `}
 aria-label="Sidebar">
 
    <div className="h-full px-3 py-4 overflow-y-auto dark:bg-black">
