@@ -4,4 +4,3 @@ export const sideNavbarState=atom({
     key:'sideNavbarState',
     default:true
 })
-

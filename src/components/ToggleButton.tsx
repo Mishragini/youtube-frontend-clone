@@ -1,5 +1,5 @@
-import { sideNavbarState } from "@/store/atom";
 import { useRecoilState } from "recoil";
+import { sideNavbarState } from "@/store/atom";
 export default function ToggleButton(){
     const [open,setOpen]=useRecoilState(sideNavbarState);
 

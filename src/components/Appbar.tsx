@@ -2,8 +2,10 @@ import {useState} from'react';
 
 import SideNavbar from './SideNavbar';
 import ToggleButton from './ToggleButton';
+import { useRecoilValue } from 'recoil';
+import { sideNavbarState } from '@/store/atom';
 export default function Appbar(){
-
+   const open=useRecoilValue(sideNavbarState);
     const [isSearchVisible, setIsSearchVisible] = useState(false);
 
   const toggleSearch = () => {
@@ -58,7 +60,7 @@ export default function Appbar(){
   </svg>
   <img className="rounded-full w-10 h-10 "src='pfp.png' />
     </div>
-    <SideNavbar/>
+    {open&&<SideNavbar/>}
 
         </div>
     )

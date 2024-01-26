@@ -11,12 +11,14 @@ import {
   useRecoilState,
   useRecoilValue,
 } from 'recoil';
+import WindowResize from "@/components/WindowResize";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
    <RecoilRoot>
+    <WindowResize/>
     <Appbar />
     <VedioGrid />
    </RecoilRoot>
