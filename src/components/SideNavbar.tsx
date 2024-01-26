@@ -8,7 +8,6 @@ import {
   Home,
   ListVideo,
   LucideIcon,
-  MoveIcon,
   Music,
   Notebook,
   ShoppingBag,
